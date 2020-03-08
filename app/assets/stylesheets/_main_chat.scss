@@ -1,0 +1,99 @@
+.main-chat {
+  height: 100vh;
+  width: calc(100vw - 300px);
+  float: right;
+  &__group-info {
+    height: 99px;
+    background-color: $mainWhiteColor;
+    border-bottom: 1px solid #eeeeee;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    .group-info__information {
+      .group-name {
+        margin-top: 35px;
+        color: $mainBlackColor;
+        font-size: 20px;
+      }
+      .group-member {
+        margin-top: 15px;
+        color: $mainLightGrayColor;
+        font-size: 12px;
+      }
+    }
+    .group-info__edit-group {
+      height: 40px;
+      width: 72px;
+      font-size: 16px;
+      color: $mainLightBlueColor;
+      margin: 28px 0;
+      border: 1px solid;
+      padding:8px 20px;
+      .edit {
+        text-decoration: none;
+        color: $mainLightBlueColor;
+      }
+    }
+  }
+
+  &__message-list {
+    height: calc(100vh - 100px - 90px);
+    background-color: #fafafa;
+    padding: 35px 0 0 40px;
+    .message-info {
+      display: flex;
+      padding-bottom: 12px;
+      .user-name {
+        color: $mainBlackColor;
+        font-size: 16px;
+        font-weight: bold;
+        padding-right: 10px;
+      }
+      .message-date {
+        color: $mainLightGrayColor;
+        font-size: 12px;
+      }
+    }
+    .message {
+      color: #434A54;
+      font-size: 14px;
+      padding-bottom: 46px;
+    }
+  }
+  &__message-form {
+    height: 90px;
+    background-color: #d2d2d2;
+    .new-message {
+      display: flex;
+      .input-box {
+        width: 100%;
+        margin: 20px 15px 20px 40px;
+        display: flex;
+        position: relative;
+        &__text {
+          height: 50px;
+          width: 100%;
+          padding: 0 40px 0 10px;
+          border-style: none;
+        }
+        &__image {
+          font-size: 20px;
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          &-file {
+            display: none;
+          }
+        }
+      }
+      .submit-btn {
+        height: 50px;
+        width: 100px;
+        padding: 0 30px;
+        margin: 20px 40px 20px 0;
+        background-color: $mainLightBlueColor;
+        color: $mainWhiteColor;
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.main-chat
+  .main-chat__group-info
+    %ul.group-info__information
+      %li.group-name
+        グループ名
+      %li.group-member
+        Member : Lucy
+    .group-info__edit-group
+      = link_to "#", class: "edit" do
+        Edit
+
+  .main-chat__message-list
+    %ul.message-info
+      %li.user-name
+        Lucy
+      %li.message-date
+        2020/03/08(Sun) 20:12:41
+    %p.message
+      メッセージ内容
+
+    %ul.message-info
+      %li.user-name
+        Ash
+      %li.message-date
+        2020/03/08(Sun) 20:36:12
+    %p.message
+      メッセージ内容
+       
+  .main-chat__message-form
+    %form.new-message
+      .input-box
+        %input{type: "text", class: "input-box__text", placeholder: "type a message"}
+        %label{class: "input-box__image"}
+          = icon('far', 'image')
+          %input{type: "file", class: "input-box__image-file"}
+      %input{type: "submit", class: "submit-btn", value: "Send"}
