@@ -1,0 +1,19 @@
+.side-bar
+  .side-bar__top-box
+    .top-box-items
+      %p.top-box-items__username
+        Lucy
+      %ul.top-box-items__menu
+        %li.new-group
+          = link_to "#", class: "top-box-items__menu" do
+            = icon('fas', 'edit', class: "top-box-items__menu--icon")
+        %li.edit-user
+          = link_to "#", class: "top-box-items__menu" do
+            = icon('fas', 'cog', class: "top-box-items__menu--icon")
+  
+  .side-bar__groups
+    = link_to "#", class: "group" do
+      %p.group__group-name
+        グループ名
+      %P.group__newest-message
+        まだメッセージがありません
