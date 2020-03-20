@@ -4,16 +4,16 @@
       %li.group-name  
         = @group.name
       %li.group-member
+        ="Member : "
         - @group.users.each_with_index do |user|
-          =user.name
+          = user.name
 
     .group-info__edit-group
       = link_to "edit", class: "edit" do
         Edit
 
   .main-chat__message-list
-    %p.messages
-      = render @messages
+    = render @messages
 
     -# %ul.message-info
     -#   %li.user-name
