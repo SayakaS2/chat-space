@@ -40,7 +40,6 @@
     height: calc(100vh - 100px - 90px);
     background-color: #fafafa;
     padding: 35px 0 0 40px;
-    overflow: scroll;
     .message-info {
       display: flex;
       padding-bottom: 12px;
@@ -55,7 +54,7 @@
         font-size: 12px;
       }
     }
-    .lower-message {
+    .message {
       color: #434A54;
       font-size: 14px;
       padding-bottom: 46px;

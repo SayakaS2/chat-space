@@ -4,7 +4,7 @@
       = message.user.name
     .message-date
       = message.created_at.strftime("%Y/%m/%d(%a) %H:%M:%S")
-  .lower-message
+  .message
     - if message.content.present?
       %p.lower-message__content
         = message.content
