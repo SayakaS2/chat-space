@@ -1,5 +1,4 @@
 class CardController < ApplicationController
-  
   require "payjp"
 
   def new
