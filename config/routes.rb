@@ -4,8 +4,7 @@ Rails.application.routes.draw do
   get 'card/show'
 
   devise_for :users
-  # root 'groups#index'
-  root 'card#new'
+  root 'groups#index'
   resources :users, only: [:index, :edit, :update]
   resources :groups, only: [:new, :create, :edit, :update] do
     resources :messages, only: [:index, :create]
